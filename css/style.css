@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243,243 ,243);
+    display: flex;
+    justify-content: center;
+}
+
+.main-container{
+    display:flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-phone{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 50%;
+   padding-top: 30px;
+}
+
+.instagram-phone img{
+    width: 50rem;  
+}
+
+.instagram-continue{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 34rem;
+}
+
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 87%;
+    background-color: #fff;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+    margin: 0 0 10px;
+    
+}
+
+.group:nth-child(1){
+    min-height: 19rem;
+    padding-top: 3rem;
+    font-weight: 500;
+}
+
+.instagram-logo{
+    height: 3rem;
+}
+
+.perfil-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+.perfil-photo img{
+    height: 6rem;
+    
+}
+
+.instagram-login{
+    background-color: #0095f6;
+    color:#fff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout{
+    color:#0095f6;
+    margin-top: 1rem;
+    margin-bottom: 12px; 
+}
+
+.group > p{
+    color: rgb(160,160 ,160);
+}
+
+
+.link-blue{
+    color: #0095f6;
+    font-weight: 500;
+}
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.get-the-app > p{
+    margin: 10px;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:1rem;
+}
+
+.app-download img{
+    height: 3rem;
+    width: 10rem;
+    margin-right: 8px;
+    
+}
+
+/* Responsividade */
+
+@media(max-width: 1024px){
+    .main-container{
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .instagram-phone{
+        display: none;
+    }
+}
+
+@media(max-width: 650px){
+    .main-container{
+        width: 90%;
+    }
+
+    .instagram-phone{
+        display: none;
+    }
+
+    .instagram-continue{
+        width: 90%;
+    }
+}
+
